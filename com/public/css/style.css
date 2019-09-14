@@ -1,0 +1,132 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*=====初期化=====*/
+button, input, select, textarea {
+	font-family : inherit;
+	font-size : 100%;
+}
+
+*{
+	margin:0px;
+	padding:0px;
+}
+li{
+	list-style-type: none;
+	list-style-position: outside;
+}
+body{
+	font-family:Arial, sans-serif;
+	margin:0 auto;
+	box-sizing: border-box;
+	font-family: 'Kosugi Maru', sans-serif;
+	background-color: #d3d3d3;
+	overflow: hidden;
+}
+
+.box{
+	width: 150px;
+	height: 150px;
+	border: solid 1px black;
+	background-color: #f0f8ff;
+	margin: 1px;
+	box-sizing: border-box;
+}
+.row{
+	display: flex;
+}
+#zone{
+	padding: 1px;
+	border: solid 1px black;
+	background-color: white;
+	width: 456px;
+	position:absolute;
+	top:48%;
+	left:50%;
+	margin-left:-225px; 
+	margin-top:-200px;
+}
+.image{
+	user-select: none;
+}
+#branding{
+	background-image: url(../../images/ground.jpg);
+	background-repeat: no-repeat;
+	height: 100vh;/*BOXの高さ指定*/
+	background-position: center center;/*背景画像の位置中央*/
+	background-size: cover;/*画像サイズ(BOX)にあわせる*/
+	position: relative;
+}
+
+#rulebox{
+	box-sizing: border-box;
+	width:20%;
+	min-width: 280px;
+	padding:10px;
+	text-align: center;
+	border:solid #000000 1px;
+	background: rgba(255,255,255,0.9);/*背景色（透過）*/
+	position:absolute;
+	top:50%;
+	left:47%;
+	margin-left:-550px; 
+	margin-top:-150px;
+}
+#rulebox li{
+	font-size:1.2em;
+	margin-bottom:30px;
+}
+#rulebox li:first-child{
+	margin-top:30px;
+}
+
+#recordbox{
+	box-sizing: border-box;
+	width:20%;
+	min-width: 250px;
+	padding:10px;
+	text-align: center;
+	border:solid #000000 1px;
+	background: rgba(255,255,255,0.9);/*背景色（透過）*/
+	position:absolute;
+	top:50%;
+	right:41%;
+	margin-right:-490px; 
+	margin-top:-150px;
+}
+td{
+	font-size:1.2em;
+	padding:20px;
+}
+tr{
+	padding:30px;
+}
+.justified{
+	-moz-text-align-last: justify;
+	text-align-last: justify;
+	text-justify:inter-ideograph;
+}
+
+#resultbox{
+	box-sizing: border-box;
+	min-width: 250px;
+	text-align: center;
+	position:absolute;
+	top:20%;
+	left:50%;
+	padding:5px;
+	margin-left:-120px; 
+	margin-top:-100px;
+	border:solid #000000 1px;
+	background: rgba(255,255,255,0.9);/*背景色（透過）*/
+}
+#resultbox p{
+	font-size:1.7em;
+	color:#696969;
+	font-weight:bold;
+}
+
+#red{
+	color:red;
+	cursor: pointer;
+}

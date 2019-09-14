@@ -1,0 +1,63 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*=====初期化=====*/
+button, input, select, textarea {
+	font-family : inherit;
+	font-size : 100%;
+}
+
+*{
+	margin:0px;
+	padding:0px;
+}
+li{
+	list-style-type: none;
+	list-style-position: outside;
+}
+body{
+	font-family:Arial, sans-serif;
+	margin:0 auto;
+	box-sizing: border-box;
+	font-family: 'Kosugi Maru', sans-serif;
+	overflow: hidden;
+}
+#branding{
+	background-image: url(com/images/ground.jpg);
+	background-repeat: no-repeat;
+	height: 100vh;/*BOXの高さ指定*/
+	background-position: center center;/*背景画像の位置中央*/
+	background-size: cover;/*画像サイズ(BOX)にあわせる*/
+	position: relative;
+}
+
+.link{
+	box-sizing: border-box;
+	min-width: 250px;
+	text-align: center;
+	position:absolute;
+	left:50%;
+	width:500px;
+	margin-left:-250px; 
+	margin-top:-100px;
+	padding:30px 0;
+	border:solid #000000 1px;
+	background: rgba(255,255,255,0.9);/*背景色（透過）*/
+}
+.link h1{
+	font-size:2em;
+	font-weight:bold;
+}
+.link p{
+	font-size:1.7em;
+	font-weight:bold;
+}
+#link1{
+	top:30%
+}
+#link2{
+	top:55%
+}
+#link3{
+	top:80%
+}
